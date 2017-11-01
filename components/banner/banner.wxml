@@ -1,0 +1,9 @@
+<!--<wxs src='./banner.wxs' module='banner'/>-->
+
+<template name="banner">
+  <view class='banner'>
+    <block wx:for="{{items}}">
+      <image mode='widthFix' class="{{ index < currentIdx ? 'left' : index === currentIdx ? '' : 'right' }}" src="{{item.covers[0].url}}"></image>
+    </block>
+  </view>
+</template>

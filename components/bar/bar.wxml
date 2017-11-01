@@ -1,0 +1,17 @@
+<!-- 顶栏的 template -->
+<template name="bar">
+  <view class='bar'>
+    <view class="logo">
+      <image mode='aspectFit'
+      src='../../assets/logo.png'></image>
+    </view>
+    <view class='shopping-cart'>
+      <image></image>
+      <text>购物车</text>
+    </view>
+    <view class='my-order'>
+      <image mode='aspectFit' src='../../assets/list.png'></image>
+      <text>我的订单</text>
+    </view>
+  </view>
+</template>

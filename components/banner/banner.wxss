@@ -1,0 +1,22 @@
+.banner {
+  background-color: #ccc;
+  overflow: hidden;
+  position: relative;
+  height: 347rpx;
+}
+
+.banner image {
+  width: 100%;
+  position: absolute;
+  transition: left 0.5s;
+  top: 0;
+  left: 0;
+}
+
+.banner image.left {
+  left: -100%;
+}
+
+.banner image.right {
+  left: 100%;
+}

@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<import src="../../components/bar/bar.wxml"/>
+<import src="../../components/banner/banner.wxml"/>
+<import src="../../components/recommendation/recommendation.wxml"/>
+<import src="../../components/special-subject/specialSubject.wxml"/>
+<scroll-view scroll-y="true" bindscrolltolower="retrieveNextSpecialSubject" style='height: {{scrollViewHeight}}px' class="container">
+  <template is="bar"/>
+  <template data="{{...carouselImages}}" is="banner"/>
+  <template data="{{...recommendationItems}}" is="recommendation"/>
+  <view class="special-subjects">
+    <block wx:for="{{specialSubjects}}">
+      <block wx:for="{{item}}">
+        <template data="{{...item}}" is="special-subject"/>
+      </block>
+    </block>
+  </view>
+</scroll-view>

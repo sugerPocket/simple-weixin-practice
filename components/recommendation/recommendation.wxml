@@ -1,0 +1,25 @@
+<template name="recommendation">
+  <view class="recommendation">
+    <view class="title">
+      <image class='decoration' src='../../assets/group21.png'/>
+      <text class='title-text'>本周精选</text>
+      <image class='decoration' src='../../assets/group21.png'/>
+      <text class='view-more'>查看更多</text>
+    </view>
+    <view class='recommendation-list'>
+      <block wx:for="{{items}}">
+        <view class='recommendation-item'>
+          <image mode='aspectFit' src="{{item.images[0].webp_url}}"></image>
+          <view class='recommendation-item-meta'>
+            <view class='brand'>{{item.brand.name}}</view>
+            <view class='name'>{{item.name}}</view>
+            <view class='price'>{{item.price2.value_display}}
+              <image mode='widthFix' class="arrow" src='../../assets/arrow.png'></image>
+            </view>
+            <view class="price-off">{{item.price2.price_off_text}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</template>

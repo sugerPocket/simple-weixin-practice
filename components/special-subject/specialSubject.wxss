@@ -1,0 +1,68 @@
+.special-subject {
+  border-top: 12rpx solid rgb(221, 221, 221);
+}
+
+.special-subject .cover image {
+  width: 100%;
+}
+
+.special-subject .cover {
+  position: relative;
+}
+
+.special-subject .cover::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-bottom: 24rpx solid white;
+  border-right: 24rpx solid transparent;
+  border-left: 24rpx solid transparent;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.special-subject .special-subject-items {
+  white-space: nowrap;
+  padding: 22rpx;
+  height: 352rpx;
+}
+.special-subject .special-subject-items .special-subject-item {
+  width: 260rpx;
+  display: inline-block;
+  margin: 0 8rpx;
+  padding: 0 15rpx;
+  text-align: center;
+}
+
+.special-subject .special-subject-items .special-subject-item > image {
+  max-width: 138rpx;
+  max-height: 220rpx;
+}
+
+.special-subject .special-subject-items .special-subject-item .meta {
+  text-align: left;
+}
+
+.special-subject .special-subject-items .special-subject-item .price {
+  width: 100%;
+  overflow: hidden;
+}
+
+.special-subject .special-subject-items .special-subject-item .name {
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+  overflow-x: hidden;
+  font-size: 31.5rpx;
+}
+
+.special-subject .special-subject-items .special-subject-item .display-price {
+  font-size: 27rpx;
+  display: inline-block;
+  min-width: 120rpx;
+}
+
+.special-subject .special-subject-items .special-subject-item .price-off {
+  font-size: 22.5rpx;
+}

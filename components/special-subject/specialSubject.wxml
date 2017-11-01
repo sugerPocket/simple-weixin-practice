@@ -1,0 +1,22 @@
+<template name="special-subject">
+  <view class="special-subject">
+    <view class="cover">
+      <image mode='widthFix' src="{{covers[0].webp_url}}"></image>
+    </view>
+    <scroll-view class="special-subject-items" scroll-x>
+      <block wx:for="{{sku}}">
+        <view class="special-subject-item" wx:if="{{item.sku_id}}">
+          <image mode='aspectFit' src="{{item.images[0].webp_url}}"></image>
+          <text></text>
+          <view class="meta">
+            <text class="name">{{item.name}}</text>
+            <view class="price">
+              <text class="display-price">{{item.price2.value_display}}</text>
+              <text class="price-off">{{item.price2.price_off_text}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</template>

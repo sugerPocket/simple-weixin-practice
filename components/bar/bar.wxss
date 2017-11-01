@@ -1,0 +1,27 @@
+.bar {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 11rpx 0 20rpx;
+}
+
+.bar > .logo {
+  flex: 1;
+}
+
+.bar > .logo image {
+  height: 90rpx;
+  width: 360rpx;
+}
+
+.bar > .my-order, .bar > .shopping-cart {
+  width: 98rpx;
+  height: 82rpx;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.bar image {
+  width: 100%;
+  height: 56rpx;
+}
